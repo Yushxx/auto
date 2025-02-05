@@ -54,7 +54,8 @@ async function onUpdate(data, botApi, Reactions, RestrictedChats, botUsername, R
             ]);
         } else if (data.message && text === '/reactions') {
             const reactions = Reactions.join(", ");
-            await botApi.sendMessage(chatId, "✅ Enabled Reactions : 
+        await botApi.sendMessage(chatId, "✅ Enabled Reactions :\n- Like 👍\n- Love ❤️\n- Laugh 😂");
+
 
 " + reactions);
         } else {
